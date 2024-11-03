@@ -72,8 +72,15 @@ Predict Personal Financial Wellness based on Demographic Information.
 
 ## Visualization and Correlation
 
-**Heatmap**
-![image](https://github.com/user-attachments/assets/02ded40c-3fe0-4b6f-a54e-3543b60a6f4f)
+**Heatmap**  
+![image](https://github.com/user-attachments/assets/02ded40c-3fe0-4b6f-a54e-3543b60a6f4f)  
+Looking into this correlation heatmap, there are some interesting insights that we can explore deeper:
+- `Age` have no correlation with any other variables.
+- `City_Tier` have slightly negative correlation with `Rent`, meaning that the larger the city, the higher the rent fee would be
+- `Loan_Repayment` have a significantly negative correlation with Financial Health, it is reasonable since we take into acount DTI Ratio when calculating Financial Point.
+    &rarr; Does `Loan_Repayment` amount have any correlation with `Age`/`Age_Group`, `Occupation` or `Dependents`?
+- `Rent` have negative impact on `Fin_Health`
+- `Dependents` column have negative correlation with `Fin_Health`
 
 ## Model and Evaluation
 
