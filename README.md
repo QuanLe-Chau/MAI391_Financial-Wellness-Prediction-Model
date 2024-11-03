@@ -64,9 +64,15 @@ Predict Personal Financial Wellness based on Demographic Information.
 
 ## Descriptive Statistic
 
+**Descriptive Statistic Table**
+
 ![image](https://github.com/user-attachments/assets/949383a5-1f82-48d9-b112-2d17a2507084)
 
+![image](https://github.com/user-attachments/assets/464867c6-44df-47bf-9221-e12678499b71)
+
 ## Visualization and Correlation
+
+**Heatmap**
 
 ## Model and Evaluation
 
