@@ -66,21 +66,30 @@ Predict Personal Financial Wellness based on Demographic Information.
 
 **Descriptive Statistic Table**
 
-![image](https://github.com/user-attachments/assets/949383a5-1f82-48d9-b112-2d17a2507084)
-
-![image](https://github.com/user-attachments/assets/464867c6-44df-47bf-9221-e12678499b71)
+<img src="https://github.com/user-attachments/assets/949383a5-1f82-48d9-b112-2d17a2507084" alt="image" width="610"/><img src="https://github.com/user-attachments/assets/464867c6-44df-47bf-9221-e12678499b71" alt="image" width="380"/>
 
 ## Visualization and Correlation
+<table>
+  <td>
+    **Heatmap**   
+    <img src="https://github.com/user-attachments/assets/02ded40c-3fe0-4b6f-a54e-3543b60a6f4f" alt="image" width="500"/>
+  </td>
 
-**Heatmap**  
-![image](https://github.com/user-attachments/assets/02ded40c-3fe0-4b6f-a54e-3543b60a6f4f)  
-Looking into this correlation heatmap, there are some interesting insights that we can explore deeper:
-- `Age` have no correlation with any other variables.
-- `City_Tier` have slightly negative correlation with `Rent`, meaning that the larger the city, the higher the rent fee would be
-- `Loan_Repayment` have a significantly negative correlation with Financial Health, it is reasonable since we take into acount DTI Ratio when calculating Financial Point.
-    &rarr; Does `Loan_Repayment` amount have any correlation with `Age`/`Age_Group`, `Occupation` or `Dependents`?
-- `Rent` have negative impact on `Fin_Health`
-- `Dependents` column have negative correlation with `Fin_Health`
+  <td>
+    Looking into this correlation heatmap, there are some interesting insights that we can explore deeper:<br>
+    - `Age` have no correlation with any other variables.<br>
+    - `City_Tier` have slightly negative correlation with `Rent`, meaning that the larger the city, the higher the rent fee would be. <br>
+    - `Loan_Repayment` have a significantly negative correlation with Financial Health, it is reasonable since we take into acount DTI Ratio when calculating Financial Point. <br>
+    &rarr; Does `Loan_Repayment` amount have any correlation with `Age`/`Age_Group`, `Occupation` or `Dependents`? <br>
+    - `Rent` have negative impact on `Fin_Health`<br>
+    - `Dependents` column have negative correlation with `Fin_Health`<br>
+  </td>
+  
+</table>
+
+
+
+
 
 ## Model and Evaluation
 
