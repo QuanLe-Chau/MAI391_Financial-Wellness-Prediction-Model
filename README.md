@@ -73,6 +73,7 @@ Predict Personal Financial Wellness based on Demographic Information.
 ## Visualization and Correlation
 
 **Heatmap**
+![image](https://github.com/user-attachments/assets/02ded40c-3fe0-4b6f-a54e-3543b60a6f4f)
 
 ## Model and Evaluation
 
