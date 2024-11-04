@@ -102,16 +102,25 @@ In this correlation heatmap, we can see that `Age` and `Income` have no correlat
 **Boxplot of Income Distribution between Occupation**
 
 <table>
-  <td><img src="https://github.com/user-attachments/assets/0e35e2d6-299e-4ce4-bb8d-eed7ba4f00b7" alt="image" width="400"/></td>
+  <td><img src="https://github.com/user-attachments/assets/0e35e2d6-299e-4ce4-bb8d-eed7ba4f00b7" alt="image" width="300"/></td>
   <td>
     There are 4 types of Occupations in the Dataset, which is: Student, Professional, Self_Employed and Retired.<br>
     &rarr; Income distributions are almost identical between 4 types of Occupations.
   </td>
 </table>
 
-
-
 ## Model and Evaluation
+### Preparation for Model Development
+
+- Encode categorical variables (`City_Tier`/ `Occupation`) using One-Hot Encoding
+- Feature Selection:
+  - Target Variable: `Fin_Health` (stands for Financial Health)
+  - Predictors: [`Income`, `Age`, `Dependents`, `Loan_Repayment`, `Occupation`(encoded Occupation), `City_Tier`(encoded City_Tier)]
+- Spliting encoded dataset into Train set and Test set (70/30 ratio)
+- Scaling data using StandardScaler
+  
+### 1. Multivariate Logistic Regression
+
 
 ## Significance
 
