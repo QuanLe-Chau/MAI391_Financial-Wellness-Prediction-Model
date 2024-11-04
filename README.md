@@ -169,6 +169,12 @@ One of the benefits of Random Forest is that it provides feature importance scor
 | accuracy_score | 0.8326666666666667 |
 |classification_report| <img src="https://github.com/user-attachments/assets/016dc3b1-d337-439b-ba34-ad77e138ab17" alt="image" width=300/>|
 
-## Significance
+## Significance & Conclusion
 
-## Conclusion
+- The expected value of the result collected through these model used in the project is approximately ~80% accurate.  
+- Even though the accuracy is not really impressive, it provided an interested insights to predict financial health of each individual from just basic information, without the need to look deep into transaction/ expenses history.
+- This dataset provided a limited information about each individual's demographic, it is still room for improvement when more demographic information is collected. 
+
+
+
+
