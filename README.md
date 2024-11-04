@@ -66,28 +66,48 @@ Predict Personal Financial Wellness based on Demographic Information.
 
 **Descriptive Statistic Table**
 
-<img src="https://github.com/user-attachments/assets/949383a5-1f82-48d9-b112-2d17a2507084" alt="image" width="610"/><img src="https://github.com/user-attachments/assets/464867c6-44df-47bf-9221-e12678499b71" alt="image" width="380"/>
+<img src="https://github.com/user-attachments/assets/949383a5-1f82-48d9-b112-2d17a2507084" alt="image" width="610"/><img src="https://github.com/user-attachments/assets/c603b3c4-bc18-4894-8209-dea6ea324ee5" alt="image" width="340"/>
 
 ## Visualization and Correlation
+**Correlation Heatmap**
 <table>
-  <td>
-    **Heatmap**   
+  <td> 
     <img src="https://github.com/user-attachments/assets/02ded40c-3fe0-4b6f-a54e-3543b60a6f4f" alt="image" width="500"/>
   </td>
 
   <td>
     Looking into this correlation heatmap, there are some interesting insights that we can explore deeper:<br>
-    - `Age` have no correlation with any other variables.<br>
-    - `City_Tier` have slightly negative correlation with `Rent`, meaning that the larger the city, the higher the rent fee would be. <br>
-    - `Loan_Repayment` have a significantly negative correlation with Financial Health, it is reasonable since we take into acount DTI Ratio when calculating Financial Point. <br>
-    &rarr; Does `Loan_Repayment` amount have any correlation with `Age`/`Age_Group`, `Occupation` or `Dependents`? <br>
-    - `Rent` have negative impact on `Fin_Health`<br>
-    - `Dependents` column have negative correlation with `Fin_Health`<br>
+    - Age have no correlation with any other variables.<br>
+    - City_Tier have slightly negative correlation with Rent, meaning that the larger the city, the higher the rent fee would be. <br>
+    - Loan_Repayment have a significantly negative correlation with Financial Health, it is reasonable since we take into acount DTI Ratio when calculating Financial Point. <br>
+    &rarr; Does Loan_Repayment amount have any correlation with Age/Age_Group, Occupation or Dependents? <br>
+    - Rent have negative impact on Financial Health<br>
+    - Dependents column have negative correlation with Financial Health status<br>
   </td>
   
 </table>
 
+### 1. Age, Income and Occupation: Have no identifiable correlation
+In this correlation heatmap, we can see that `Age` and `Income` have no correlation. But it is more reasonable to think that `Age` and `Income` should have a positive linear relationship, isn't it? 
 
+**Scatter Plot of Age and Income**   
+
+<table>
+  <td><img src="https://github.com/user-attachments/assets/164cd41a-2102-4cb1-bc96-0c20346d459e" alt="image" width="550"/></td>
+  <td>
+    &rarr; While there is a really big gap between mininum and maximum value of the amount of income, the income amounts of all age group are almost identical and indistinguishable.
+  </td>
+</table>
+
+**Boxplot of Income Distribution between Occupation**
+
+<table>
+  <td><img src="https://github.com/user-attachments/assets/0e35e2d6-299e-4ce4-bb8d-eed7ba4f00b7" alt="image" width="400"/></td>
+  <td>
+    There are 4 types of Occupations in the Dataset, which is: Student, Professional, Self_Employed and Retired.<br>
+    &rarr; Income distributions are almost identical between 4 types of Occupations.
+  </td>
+</table>
 
 
 
