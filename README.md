@@ -121,16 +121,53 @@ In this correlation heatmap, we can see that `Age` and `Income` have no correlat
   
 ### 1. Multivariate Logistic Regression
 
-Model: LogisticRegression from Scikit-Learn Library  
-| | Using Default Parameter | Using Parameter after tuning using GridSearch |
+**Why:** Since the objective of the project is to predict Financial Wellness based on Demographic information. Logistic regression is simple and effective for classification. 
+
+**Model**: LogisticRegression from Scikit-learn Library  
+
+| | Using Default Parameter | Using Parameter after tuning using GridSearchCV |
 |--|--|--|
-| multi_class | multinomial | multinomial |
 | solver | lbfgs | saga |
 | C | | 10| 
 |max_iter| | 100|
 | confusion_matrix| <img src="https://github.com/user-attachments/assets/e8d35f11-1f0e-4ff2-a043-c8ef4e2cad87" alt="image"/>|<img src="https://github.com/user-attachments/assets/6b47ba04-0ac6-4d53-95ac-b71c245de70a" alt="image"/> |
 | classification_report |<img src="https://github.com/user-attachments/assets/11afa289-bdad-4723-9ae0-f08cb5cb9634" alt="image"/>|<img src="https://github.com/user-attachments/assets/c1ca19c0-de0c-425a-86bf-743183696e5c" alt="image"/> |
 
+### 2. Random Forest
+
+**Why:** Random forests build an ensemble of decision trees, which usually increases predictive accuracy by reducing overfitting. They can capture complex patterns and interactions between demographic factors and financial wellness.
+
+**Model:** RandomForestClassifier from Scikit-learn Library
+
+| Result | |
+|--|--|
+| accuracy_score | 0.8438333333333333 |
+| confusion_matrix | <img src="https://github.com/user-attachments/assets/744a9d8a-eb03-49e3-bf12-fb2ad31dd9ef" alt="image"/>|
+|classification_report| <img src="https://github.com/user-attachments/assets/d1238bca-5712-496c-a25c-84c955a84b24" alt="image" width=300/>|
+
+One of the benefits of Random Forest is that it provides feature importance scores, which show which features are most predictive.
+
+<table>
+  <td>
+    <img src="https://github.com/user-attachments/assets/8c42c567-89f4-4457-ba5e-623737fc3b83" alt="image"/>
+  </td>
+  <td>
+    - Even though we can not specify the correlation between Age and other variable, it seems to be a good predictor for the financial health.<br>
+    - As we see in the EDA section, the occupation distribution do not really tell the story of financial health.<br>
+    - On the other hand, Loan Repayment amount can be quite predictive
+  </td>
+</table>
+
+### 3. K-Nearest Neighbors 
+
+**Why:** KNN is a simple, instance-based learner that predicts based on similarity to other observations. It can work well if there are clear clusters in demographics associated with financial wellness.
+
+**Model:** KNeighborsClassifier from Scikit-learn Library
+
+| Result | |
+|--|--|
+| accuracy_score | 0.8326666666666667 |
+|classification_report| <img src="https://github.com/user-attachments/assets/016dc3b1-d337-439b-ba34-ad77e138ab17" alt="image" width=300/>|
 
 ## Significance
 
