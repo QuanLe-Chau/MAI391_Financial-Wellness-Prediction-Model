@@ -121,6 +121,16 @@ In this correlation heatmap, we can see that `Age` and `Income` have no correlat
   
 ### 1. Multivariate Logistic Regression
 
+Model: LogisticRegression from Scikit-Learn Library  
+| | Using Default Parameter | Using Parameter after tuning using GridSearch |
+|--|--|--|
+| multi_class | multinomial | multinomial |
+| solver | lbfgs | saga |
+| C | | 10| 
+|max_iter| | 100|
+| confusion_matrix| <img src="https://github.com/user-attachments/assets/e8d35f11-1f0e-4ff2-a043-c8ef4e2cad87" alt="image"/>|<img src="https://github.com/user-attachments/assets/6b47ba04-0ac6-4d53-95ac-b71c245de70a" alt="image"/> |
+| classification_report |<img src="https://github.com/user-attachments/assets/11afa289-bdad-4723-9ae0-f08cb5cb9634" alt="image"/>|<img src="https://github.com/user-attachments/assets/c1ca19c0-de0c-425a-86bf-743183696e5c" alt="image"/> |
+
 
 ## Significance
 
