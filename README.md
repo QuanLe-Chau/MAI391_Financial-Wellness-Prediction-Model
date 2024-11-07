@@ -69,6 +69,16 @@ Predict Personal Financial Wellness based on Demographic Information.
 <img src="https://github.com/user-attachments/assets/949383a5-1f82-48d9-b112-2d17a2507084" alt="image" width="610"/><img src="https://github.com/user-attachments/assets/c603b3c4-bc18-4894-8209-dea6ea324ee5" alt="image" width="340"/>
 
 ## Visualization and Correlation
+
+### Data Visualization
+
+| Distribution between Age Group in data | 
+| -- |
+|<img src="https://github.com/user-attachments/assets/5507c264-23c1-4b63-91dc-c2148027c42b" alt="image" width="300"/>|
+
+
+## Determine Correlations
+
 **Correlation Heatmap**
 <table>
   <td> 
@@ -87,7 +97,7 @@ Predict Personal Financial Wellness based on Demographic Information.
   
 </table>
 
-### 1. Age, Income and Occupation: Have no identifiable correlation
+#### 1. Age, Income and Occupation: Have no identifiable correlation
 In this correlation heatmap, we can see that `Age` and `Income` have no correlation. But it is more reasonable to think that `Age` and `Income` should have a positive linear relationship, isn't it? 
 
 **Scatter Plot of Age and Income**   
@@ -109,13 +119,13 @@ In this correlation heatmap, we can see that `Age` and `Income` have no correlat
   </td>
 </table>
 
-### 2. City Tier and Occupation distribution
+#### 2. City Tier and Occupation distribution
 
 Looking at the Pivot Table of `City_Tier` and `Occupation`, it is a kind of paradox: `City_Tier` 1 is not the most densely populated cities in the dataset. But `City_Tier` 2 was. 
 
 | Pivot table of Occupation and City Tier | Psuedocolor Plot of Occupation and City Tier |
 |--|--|
-|<img src="https://github.com/user-attachments/assets/d8a28aad-cc63-4bd3-93a1-54824b5f4210" alt="image" width="550"/> | <img src="https://github.com/user-attachments/assets/063719c6-38b4-47fc-89ec-e98d43c2e97a" alt="image" width="550"/>|
+|<img src="https://github.com/user-attachments/assets/d8a28aad-cc63-4bd3-93a1-54824b5f4210" alt="image" width="400"/> | <img src="https://github.com/user-attachments/assets/063719c6-38b4-47fc-89ec-e98d43c2e97a" alt="image" width="400"/>|
 
 
 
