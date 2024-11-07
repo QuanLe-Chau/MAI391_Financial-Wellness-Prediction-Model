@@ -109,6 +109,16 @@ In this correlation heatmap, we can see that `Age` and `Income` have no correlat
   </td>
 </table>
 
+### 2. City Tier and Occupation distribution
+
+Looking at the Pivot Table of `City_Tier` and `Occupation`, it is a kind of paradox: `City_Tier` 1 is not the most densely populated cities in the dataset. But `City_Tier` 2 was. 
+
+| Pivot table of Occupation and City Tier | Psuedocolor Plot of Occupation and City Tier |
+|--|--|
+|<img src="https://github.com/user-attachments/assets/d8a28aad-cc63-4bd3-93a1-54824b5f4210" alt="image" width="550"/> | <img src="https://github.com/user-attachments/assets/063719c6-38b4-47fc-89ec-e98d43c2e97a" alt="image" width="550"/>|
+
+
+
 ## Model and Evaluation
 ### Preparation for Model Development
 
